@@ -23,10 +23,10 @@ public class MemberController {
         return member.getUsername();
     }
 
-    @GetMapping("/members/{id}")
-    public String findMember2(@PathVariable("id") Member member) {
-        return member.getUsername();
-    }
+//    @GetMapping("/members/{id}")
+//    public String findMember2(@PathVariable("id") Member member) {
+//        return member.getUsername();
+//    }
 
     @GetMapping("/members")
     public Page<MemberDto> list(Pageable pageable) {
